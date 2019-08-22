@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9BDAD1;
+  font-family: 'Raleway';
+  height: 1000px;
+}
+header {
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+section {
+  width: 80%;
+  height: 1000px;
+  margin: 20px auto 0px auto;
+  background-color: #FAFAFA;
+}
+#description {
+  text-align: center;
+  padding: 15px 0px;
+}
+.one,
+.two,
+.three,
+.four,
+.six,
+.seven,
+.eight {
+  display: flex;
+  padding-bottom: 30px;
+  font-size: 16px;
+
+}
+section p {
+  font-size: 16px;
+}
+.five {
+  padding-bottom: 120px;
+}
+.left{
+  width: 50%;
+  text-align: right;
+}
+.right {
+  width: 50%;
+  padding-left: 20px;
+}
+.one input,
+.two input,
+.three input{
+  width: 200px;
+  height: 30px;
+}
+.left-fielset {
+  width: 50%;
+  text-align: right;
+  float: left;
+}
+
+.right-fielset {
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+.right-fielset input,
+.right-fielset label {
+  display: block;
+}
+.right-fielset input[type='radio']{
+  float: left;
+
+}
+.right-fielset label {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.six {
+  clear: both;
+}
+.seven .ole {
+  display: flex;
+  flex-direction: column;
+}
+.seven label{
+  padding-bottom: 10px;
+}
+.form-row-button {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-size: 16px;
+  background-color: #77CFEF;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}

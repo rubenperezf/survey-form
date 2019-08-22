@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Survey form</title>
+    <meta  name='descrition' content='Create a survey form'/>
+    <meta name='keywords' content='form, survey'/>
+    <link href='style.css' rel='stylesheet'/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+
+  <body>
+    <header >
+      <h1 id='title'>Survey Form</h1>
+    </header>
+
+    <section>
+      <p id='description'>Let us know how we can improve freeCodeCamp<p>
+
+      <form id='survey-form'>
+
+        <div class='form-row one' >
+          <div class='left'>
+            <label for='name' id='name-label'>&#42;Name</label>
+          </div>
+          <div class='right'>
+            <input id='name' name='name' type='text' placeholder='Enter your name' required/>
+          </div>
+        </div>
+
+        <div class='form-row two' >
+          <div class='left'>
+            <label for='email'id='email-label'>&#42;Email</label>
+          </div>
+          <div class='right'>
+            <input id='email' name='email' type='email' placeholder='Enter your email' required/>
+          </div>
+        </div>
+
+        <div class='form-row three'>
+          <div class='left'>
+            <label for='number' id='number-label'>&#42;Age</label>
+          </div>
+          <div class='right'>
+            <input id='number' name='age'   type='number' placeholder='Age' min='3' max='20' required/>
+          </div>
+        </div>
+
+        <div class='form-row four' id='dropdown'>
+          <div class='left'>
+            <label for='current-role'> Which option best describes your current role?</label>
+          </div>
+          <div class='right'>
+            <select id='current-role' name='role'>
+              <option value='student'>Student</option>
+              <option value='full-time-job'>Full time Job</option>
+              <option value='full-time-learner'>Full time learner</option>
+              <option value='prefer-not-to say'>Prefer not to say</option>
+              <option value='other'>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class='recommended five'>
+          <fielset>
+            <div class='left-fielset'>
+              <legend>&#42;How likely is that you would recommend <br>freeCodeCamp to a friend?</legend>
+            </div>
+            <div class='right-fielset'>
+              <input id='option-1' name='redommend' type='radio' value='definitely' class='radio-label'/>
+              <label for='option-1'>Definitely</label>
+              <input id='option-2' name='redommend' type='radio' value='definitely' class='radio-label'/>
+              <label for='option-2'>Maybe</label>
+              <input id='option-3' name='redommend' type='radio' value='definitely' class='radio-label'/>
+              <label for='option-3'>Not sure</label>
+            </div>
+        </fielset>
+      </div>
+
+
+        <div class='form-row six' id='dropdown'>
+          <div class='left'>
+            <label for='likes'> What do you like most in FCC:</label>
+          </div>
+          <div class='right'>
+            <select id='likes' name='likes-fcc'>
+              <option value='challenges'>challenges</option>
+              <option value='projects'>projects</option>
+              <option value='community'>community</option>
+              <option value='open-source'>Open Source</option>
+            </select>
+          </div>
+        </div>
+
+        <div class='form-row seven'>
+          <div class='left'>
+            <span>Things that should be improved in the <br>future (Check all that apply)</span>
+          </div>
+          <div class='right ole'>
+            <label for='option-1'>
+              <input id='option-1' name='improved' type='checkbox' value='front-end-projects'/>
+              <span>Front-end Projects</span>
+            </label>
+            <label for='option-2' class=''>
+              <input id='option-2' name='improved' type='checkbox' value='back-end-projects'/>
+              <span>Back-end Projects</span>
+            </label>
+            <label for='option-3'>
+              <input id='option-3' name='improved' type='checkbox' value='data-visualization'/>
+              <span>Data Visualization</span>
+            </label>
+            <label for='option-4'>
+              <input id='option-4' name='improved' type='checkbox' value='challenges'/>
+              <span>Challenges</span>
+            </label>
+            <label for='option-5'>
+              <input id='option-5' name='improved' type='checkbox' value='opern-source'/>
+              <span>Open Source Community</span>
+            </label>
+            <label for='option-6'>
+              <input id='option-6' name='improved' type='checkbox' value='help-rooms'/>
+              <span>Gitter help rooms</span>
+            </label>
+            <label for='option-7'>
+              <input id='option-7' name='improved' type='checkbox' value='videos'/>
+              <span>Videos</span>
+            </label>
+            <label for='option-8'>
+              <input id='option-8' name='improved' type='checkbox' value='city-meetups'/>
+              <span>City Meetups</span>
+            </label>
+            <label for='option-9'>
+              <input id='option-9' name='improved' type='checkbox' value='wiki'/>
+              <span>Wiki</span>
+            </label>
+            <label for='option-10'>
+              <input id='option-10' name='improved' type='checkbox' value='forum'/>
+              <span>Forum</span>
+            </label>
+            <label for='option-10'>
+              <input id='option-10' name='improved' type='checkbox' value='addiotional-courses'/>
+              <span>Additional Courses</span>
+            </label>
+          </div>
+        </div>
+
+        <div class='form-row eight'>
+          <div class='left'>
+            <label for='comments'>Any Comments or Suggestions?</label>
+          </div>
+          <div class='right'>
+           <textarea id='comments' name='user-comments' rows='6' cols='50' placeholder="Enter your comment here..."></textarea>
+         </div>
+        </div>
+
+        <div class=form-row-button >
+          <button id='submit'>Submit</button>
+        </div>
+
+
+      </form>
+    </section>
+
+  </body>
+</html>
